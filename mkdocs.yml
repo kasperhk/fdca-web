@@ -37,5 +37,5 @@ theme:
     code: Roboto Mono
   favicon: assets/images/favicon.png
   icon:
-    logo: logo
+    logo: assets/images/fdca.png
 
