@@ -12,7 +12,7 @@ nav:
         - Events:
           - 'Git Cheat sheet': 'cheat_sheets/git_cheat_sheet.md'
         - Blog:
-         - 'Week 07': 'exercises/network_security/exercises_ww07.md'
+        
 #theme
 theme: 
   name: material
