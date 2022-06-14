@@ -34,7 +34,7 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  favicon: assets/images/favicon.png
-  logo: assets/images/fdca.svg
+  favicon: assets/images/png 300ppi/transparent/abr_largetext_transparent_pink.png
+  logo: assets/images/png 300ppi/transparent/abr_largetext_transparent_pink.png
 
 
