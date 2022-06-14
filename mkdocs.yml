@@ -42,7 +42,7 @@ theme:
     text: Roboto
     code: Roboto Mono
   favicon: assets/images/favicon.png
-  icon:
-    logo: fdca
+  theme:
+    logo: assets/images/fdca.png
 
 
