@@ -6,11 +6,11 @@ nav:
         - Hjem: index.md
         - Om FDCA: news.md
         - Vores medlemmer: osint_tools.md
-        - 'Cheat sheets':
-          - 'Git Cheat sheet': 'cheat_sheets/git_cheat_sheet.md'
         - Cyberværnepligten:
           - 'Network Security':
             - 'Week 07': 'exercises/network_security/exercises_ww07.md'
+        - Events:
+          - 'Git Cheat sheet': 'cheat_sheets/git_cheat_sheet.md'
 #theme
 theme: 
   name: material
@@ -35,6 +35,6 @@ theme:
     text: Roboto
     code: Roboto Mono
   favicon: assets/images/favicon.png
-  logo: assets/images/fdca.png
+  logo: assets/images/fdca.svg
 
 
