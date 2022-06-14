@@ -1,0 +1,1038 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://kasperhk.github.io/fdca-web/exercises/network_security/exercises_ww07/">
+      
+      <link rel="icon" href="../../../assets/images/png 300ppi/transparent/abr_largetext_transparent_pink.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.4">
+    
+    
+      
+        <title>Week 07 - FDCA</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4a0965b7.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="deep-purple">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#velser-uge-7" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="FDCA" class="md-header__button md-logo" aria-label="FDCA" data-md-component="logo">
+      
+  <img src="../../../assets/images/png 300ppi/transparent/abr_largetext_transparent_pink.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FDCA
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Week 07
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../.." class="md-tabs__link">
+      Hjem
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../news/" class="md-tabs__link">
+      Om FDCA
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../osint_tools/" class="md-tabs__link">
+      Vores medlemmer
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        Cyberværnepligten
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../cheat_sheets/git_cheat_sheet/" class="md-tabs__link">
+        Events
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="FDCA" class="md-nav__button md-logo" aria-label="FDCA" data-md-component="logo">
+      
+  <img src="../../../assets/images/png 300ppi/transparent/abr_largetext_transparent_pink.png" alt="logo">
+
+    </a>
+    FDCA
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Hjem
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../news/" class="md-nav__link">
+        Om FDCA
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../osint_tools/" class="md-nav__link">
+        Vores medlemmer
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Cyberværnepligten
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Cyberværnepligten" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Cyberværnepligten
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1">
+          Network Security
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Network Security" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          Network Security
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Week 07
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Week 07
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#velse-1-gitgitlab-og-ssh-ngler" class="md-nav__link">
+    Øvelse 1 - Git/gitlab og ssh nøgler
+  </a>
+  
+    <nav class="md-nav" aria-label="Øvelse 1 - Git/gitlab og ssh nøgler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#information" class="md-nav__link">
+    Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instruktioner" class="md-nav__link">
+    Instruktioner
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#velse-2-gitlab-pages-til-personlig-portfolio" class="md-nav__link">
+    Øvelse 2 - gitlab pages til personlig portfolio
+  </a>
+  
+    <nav class="md-nav" aria-label="Øvelse 2 - gitlab pages til personlig portfolio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#information_1" class="md-nav__link">
+    Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instruktioner_1" class="md-nav__link">
+    Instruktioner
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#velse-3-gitlab-pages-til-it-sikkerheds-nyhedskilder" class="md-nav__link">
+    Øvelse 3 - gitlab pages til it-sikkerheds nyhedskilder
+  </a>
+  
+    <nav class="md-nav" aria-label="Øvelse 3 - gitlab pages til it-sikkerheds nyhedskilder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#information_2" class="md-nav__link">
+    Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instruktioner_2" class="md-nav__link">
+    Instruktioner
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#velse-4-refleksions-sprgsmal" class="md-nav__link">
+    Øvelse 4 - refleksions spørgsmål
+  </a>
+  
+    <nav class="md-nav" aria-label="Øvelse 4 - refleksions spørgsmål">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#information_3" class="md-nav__link">
+    Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instruktioner_3" class="md-nav__link">
+    Instruktioner
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Events
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Events" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Events
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cheat_sheets/git_cheat_sheet/" class="md-nav__link">
+        Git Cheat sheet
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#velse-1-gitgitlab-og-ssh-ngler" class="md-nav__link">
+    Øvelse 1 - Git/gitlab og ssh nøgler
+  </a>
+  
+    <nav class="md-nav" aria-label="Øvelse 1 - Git/gitlab og ssh nøgler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#information" class="md-nav__link">
+    Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instruktioner" class="md-nav__link">
+    Instruktioner
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#velse-2-gitlab-pages-til-personlig-portfolio" class="md-nav__link">
+    Øvelse 2 - gitlab pages til personlig portfolio
+  </a>
+  
+    <nav class="md-nav" aria-label="Øvelse 2 - gitlab pages til personlig portfolio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#information_1" class="md-nav__link">
+    Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instruktioner_1" class="md-nav__link">
+    Instruktioner
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#velse-3-gitlab-pages-til-it-sikkerheds-nyhedskilder" class="md-nav__link">
+    Øvelse 3 - gitlab pages til it-sikkerheds nyhedskilder
+  </a>
+  
+    <nav class="md-nav" aria-label="Øvelse 3 - gitlab pages til it-sikkerheds nyhedskilder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#information_2" class="md-nav__link">
+    Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instruktioner_2" class="md-nav__link">
+    Instruktioner
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#velse-4-refleksions-sprgsmal" class="md-nav__link">
+    Øvelse 4 - refleksions spørgsmål
+  </a>
+  
+    <nav class="md-nav" aria-label="Øvelse 4 - refleksions spørgsmål">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#information_3" class="md-nav__link">
+    Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instruktioner_3" class="md-nav__link">
+    Instruktioner
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="velser-uge-7">Øvelser uge 7</h1>
+<p>Denne uges øvelser har fokus på teknik og samarbejde.</p>
+<p>Dagens øvelser afsluttes med refleksions spørgsmål som du skal besvare i dine private noter.<br />
+De kan vise sig at blive værdifulde som forberedelse til eksamen men også som en måde at fastholde din viden.</p>
+<p>Husk at stille mig og hinanden spørgsmål, kun ved at spørge kan vi blive klogere i fællesskab.</p>
+<h2 id="velse-1-gitgitlab-og-ssh-ngler">Øvelse 1 - Git/gitlab og ssh nøgler</h2>
+<h3 id="information">Information</h3>
+<p>I denne øvelse skal du opsætte git på din computer, lave ssh nøgler og forbinde til gitlab (og andre steder) med ssh.
+Det hele er beskrevet i en guide som nok kræver at du læser lidt dokumentation forskellige steder. Guiden linker til de ressourcer du har brug for.<br />
+Ud over det skal du også opsætte en user agent så du ikke behøver taste dit ssh key password hver gang du laver f.eks en git push.</p>
+<p>SSH nøglepar består af en offentlig og en privat del. Den private nøgle har ikke nogen fil type og den offentlige har filtypen <code>.pub</code></p>
+<p>Du bør aldrig dele din private nøgle eller have den liggende andre steder end på din private maskine. Eneste undtagelse er en backup af din private nøgle, her vil jeg overlade det til dig at finde et egnet sted, en usb stick, en password manager eller andet.</p>
+<p>Din offentlige SSH nøgle kan, som navnet antyder, deles med ofentligheden. For at tilgå andre maskiner eller services med SSH skal din offentlige nøgle være placeret på det sted du forsøger at tilgå.<br />
+Det kan være lidt forskelligt hvor du placerer den når du bruger services som f.eks gitlab, på en remote maskine skal den ligge i <code>~/.ssh/authorized_keys</code> filen.</p>
+<p><em>Dette er en individuel øvelse, men i skal arbejde sammen i par når i laver øvelserne. Undervejs skal i hjælpe hinanden så i når i mål med det hele.</em></p>
+<h3 id="instruktioner">Instruktioner</h3>
+<p><strong>Del 1</strong><br />
+Følg denne guide for at opsætte git, gitlab og ssh nøgler <a href="https://eal-itt.gitlab.io/gitlab_daily_workflow/index.html">https://eal-itt.gitlab.io/gitlab_daily_workflow/index.html</a> sørg for at klikke på alle links for at få så meget viden som muligt</p>
+<p><strong>Del 2</strong> ssh user agent</p>
+<p>Som sagt i beskrivelsen til denne opgave kan du tilgå maskiner og services med ssh hvis du har tilføjet en offentlig ssh nøgle som matcher din private ssh nøgle.<br />
+Det virker fint, men hvad hvis du har brug for at tilgå en 3. maskine, med ssh, fra den 2. maskine?<br />
+Det vil ikke virke med mindre din private ssh nøgle er på den 2. maskine, men det er som sagt ikke en god ide at have din private nøgle andre steder end din private maskine.<br />
+En løsning er at opsætte en <em>ssh user agent</em> og tilføje din private nøgle til agenten. Agenten kan så <em>forwardes</em> til en remote maskine og dermed gøre det muligt at tilgå yderlige maskiner fra den 2. maskine.<br />
+Nå du afslutter din ssh session vil agenten trækkes tilbage og sørge for at din private ssh nøgle ikke er på andre maskiner mere.</p>
+<p>I denne øvelse kommer du ikke længere end fordelen ved at have en user agent og slippe for at skrive dit password igen og igen. Med mindre du har en remote maskine kan du også prøve at forwarde din user agent til den maskine.</p>
+<p><strong>Del 2.1 - opsæt ssh user agent og autostart</strong></p>
+<ol>
+<li>Åben git bash (eller anden terminal der kan køre git bash)</li>
+<li>Start din user agent <code>eval $(ssh-agent -s)</code></li>
+<li>Tilføj din ssh nøgle til agenten <code>ssh-add ~/.ssh/id_ed25519</code></li>
+<li>Opsæt user agent autostart ved at følge denne guide <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows">https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows</a><br />
+    Hvis du ikke har en <code>.bashrc</code> fil, så opret den i roden af din brugers home mappe <code>~/</code></li>
+</ol>
+<p><em>Hvis du ikke opsætter autostart er du nød til manuelt at starte din agent hver gang din maskine genstartes med kommandoen <code>eval $(ssh-agent -s)</code></em></p>
+<p><strong>Del 2.2 - forward ssh user agent</strong></p>
+<ol>
+<li>Sørg for at din ssh user agent kører, hvis du har fulgt <strong>del 2.1</strong> så burde din user agent starte når du åbner din terminal, hvis ikke så gå tilbage til <strong>del 2.1</strong> og få det til at virke.</li>
+<li>Åben en terminal og ssh til din remote maskine med syntaksen <code>ssh -A user@myhost.com</code><br />
+    myhost.com kan selvfølgelig også være en ip adresse. Brugeren er den bruger du har opsat på din remote maskine.<br />
+<code>-A</code> parametret fortæller ssh at agenten skal forwardes.<br />
+   Du kan læse mere om ssh kommando parametre på <a href="https://man.openbsd.org/ssh">https://man.openbsd.org/ssh</a> eller ved at skrive <code>man ssh</code> hvis du er på linux.</li>
+<li>Fra din remote maskine test at din private nøgle er forwardet ved at verificere med gitlab.com, kør kommandoen <code>ssh -T git@gitlab.com</code></li>
+</ol>
+<h2 id="velse-2-gitlab-pages-til-personlig-portfolio">Øvelse 2 - gitlab pages til personlig portfolio</h2>
+<h3 id="information_1">Information</h3>
+<p>Gitlab giver mulighed for <a href="https://docs.gitlab.com/ee/ci/README.html">Continuous Integration, Continuous Delivery and Continuous Deployment (CI/CD)</a>.
+Helt kort giver det mulighed for at bygge og teste software i docker containere.<br />
+Gitlab kan også hoste statiske hjemmesider, alle gitlab projekter har mulighed for dette. Det kaldes <a href="https://about.gitlab.com/stages-devops-lifecycle/pages/">Gitlab pages</a>.</p>
+<p>I denne øvelse kan du lære hvordan du bruger gitlab's CI/CD og gitlab pages til at bygge din personlige portfolio. Du skal bruge en statisk site generator som hedder mkdocs <a href="https://www.mkdocs.org/">https://www.mkdocs.org/</a><br />
+Portfolio siden skal du bruge til at vise de ting du lærer i "Introduktion til it-sikkerhed".</p>
+<p>mkdocs er en statisk site generator som oversætter markdown filer til HTML. Du behøver altså ikke at vide noget om at skrive HTML, css og javascript for at lave en hjemmeside.</p>
+<p>Øvelsen formoder at du arbejder med et gitlab projekt som er klonet lokalt til din computer.</p>
+<p>Der er temmelig mange instruktioner i denne øvelse og det kan virke mere uoverskueligt end det egentlig er, derfor har jeg har lavet et eksempel projekt så du har et sted at sammenligne med: <a href="https://gitlab.com/npes/mkdocs-test">https://gitlab.com/npes/mkdocs-test</a></p>
+<p>Jeg vil også anbefale at du læser hele øvelsen igennem inden du går i gang med at arbejde, det vil hjælpe dig til at skabe et overblik.</p>
+<p><em>Dette er en individuel øvelse, men i skal arbejde sammen i par når i laver øvelserne. Undervejs skal i hjælpe hinanden så i når i mål med det hele.</em></p>
+<h3 id="instruktioner_1">Instruktioner</h3>
+<ol>
+<li>Lav et projekt på gitlab.com i dit eget namespace <code>https://gitlab.com/bruger_navn</code></li>
+<li>Klon projektet til din computer med <code>git clone</code>, brug ssh til at klone projektet :-)</li>
+<li>Installer Python og pip, følg mkdocs guiden, stop ved <em>Installing MKDocs</em> <a href="https://www.mkdocs.org/user-guide/installation/">https://www.mkdocs.org/user-guide/installation/</a></li>
+<li>Naviger til dit gitlab projekt, åben en terminal og lav et Python virtual environment <a href="https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment">https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment</a></li>
+<li>Aktiver virtual environment <a href="https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#activating-a-virtual-environment">https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#activating-a-virtual-environment</a></li>
+<li>Følg mkdocs getting started guiden <a href="https://www.mkdocs.org/getting-started/">https://www.mkdocs.org/getting-started/</a> til og med punktet <strong>Adding pages</strong></li>
+<li>Flyt mappen <code>docs</code> og filen <code>mkdocs.yml</code> til en mappe i dit projekt, navngiv mappen <code>pages</code></li>
+<li>pip freeze gemmer dine ,virtual environment, package dependencies, så dit projekt senere kan genskabes uden en backup af selve pip pakkerne.<br />
+   Læs om pip freeze <a href="https://pip.pypa.io/en/stable/reference/pip_freeze/">https://pip.pypa.io/en/stable/reference/pip_freeze/</a> og lav en <code>requirements.txt</code> fil ved at køre kommandoen <code>pip freeze &gt; requirements.txt</code><br />
+   Kontroller at <code>requirements.txt</code> indeholder dine dependencies, f.eks.
+   <code>text click==7.1.2
+   future==0.18.2
+   Jinja2==2.11.2
+   joblib==0.17.0
+   livereload==2.6.3
+   lunr==0.5.8 Markdown==3.3.3
+   MarkupSafe==1.1.1
+   mkdocs==1.1.2
+   nltk==3.5
+   PyYAML==5.3.1
+   regex==2020.11.13
+   six==1.15.0
+   tornado==6.1
+   tqdm==4.53.0</code></li>
+<li>.gitignore fil</li>
+</ol>
+<p>Det er god praksis ikke at gemme dependencies i dit git repository, de fylder unødvendigt og er ikke nødvendige for at genskabe projektet nu hvor du har din <code>requirements.txt</code><br />
+    Dependencies i dette projekt er dit virtuelle environment samt mkdocs site mappen.</p>
+<ol>
+<li>I roden af din gitlab projekt mappe, lav en fil der hedder <code>.gitignore</code></li>
+<li>Åben <code>.gitignore</code> i en teksteditor</li>
+<li>
+<p>Tilføj 2 seperate linjer i filen, <code>env/</code> og <code>site/</code> linjerne fortæller git at disse mapper skal ignoreres</p>
+</li>
+<li>
+<p>Gitlab pipeline fil</p>
+<p>Gitlab bruger Gitlab runners til at køre docker containers <a href="https://docs.gitlab.com/runner/">https://docs.gitlab.com/runner/</a><br />
+Docker containere kører et OS image i en container.<br />
+Gitlab runner pipeline konfigurationen laver du i dit projekt, i en fil der hedder <code>.gitlab-ci.yml</code><br />
+Filens sprog/syntaks hedder <a href="https://en.wikipedia.org/wiki/YAML">yaml</a> og de kommandoer der eksekveres er <code>bash</code> kommandoer.</p>
+<p>Du kan læse mere om gitlab runners, pipelines og jobs her <a href="https://docs.gitlab.com/ee/ci/pipelines/">https://docs.gitlab.com/ee/ci/pipelines/</a></p>
+<p>I dit MKDocs projekt skal du konfigurer en pipeline som bruger en docker container med linux alpine som image.<br />
+I den container installeres et par ting, inklusiv MKDocs og herefter køres kommandoen <code>mkdocs build</code><br />
+Endelig flyttes build outputtet (din mkdocs side) til gitlab projektets public mappe. Gitlab pages filern skal ligge i gitlab projektets public mappe, det er her gitlab server siden fra.</p>
+<ol>
+<li>I gitlab projektets rod lav en fil der hedder <code>.gitlab-ci.yml</code></li>
+<li>Tilføj nedenstående til filen:</li>
+</ol>
+<p><code>yaml
+   image: python:alpine
+   before_script:
+     - apk add --no-cache --virtual .build-deps gcc musl-dev
+     - pip install cython
+     - pip install --upgrade pip
+     - pip install mkdocs
+     # Add your custom theme if not inside a theme_dir
+     # (https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes)
+     # - pip install mkdocs-material
+   pages:
+     script:
+       - cd pages
+       - mkdocs build
+       - mv site ../public
+     artifacts:
+       paths:
+         - public
+     only:
+       - main</code></p>
+</li>
+<li>
+<p>git add og commit nye filer</p>
+<ol>
+<li>Tilføj nye filer med <code>git add .</code></li>
+<li>Commit med <code>git commit -am "added mkdocs"</code></li>
+<li>Push med <code>git push</code></li>
+</ol>
+</li>
+<li>
+<p>Check din pipeline</p>
+<ol>
+<li>Naviger til projektet på gitlab.com</li>
+<li>Klik på <code>CI/CD</code> i menuen til venstre</li>
+<li>Klik på <code>pipelines</code></li>
+<li>Klik på jobbet for at se hvad der sker</li>
+<li>Hvis jobbet er kørt uden fejl vil den sidste linje vise <code>Job succeeded</code>, hvis ikke så læs fejlbeskrivelsen og debug.</li>
+</ol>
+</li>
+<li>
+<p>Kontroller at siden kører på gitlab</p>
+<ol>
+<li>På gitlab.com, i dit projekt, naviger til Settings &gt; Pages og klik på linket under <code>Your pages are served under:</code></li>
+<li>Første gang siden bygges kan der gå op til 30 minutter før siden er "live"</li>
+</ol>
+</li>
+<li>
+<p>Skriv dit navn og link til din portfolio, i dette google dokument (login på google med ucl edu credentials) <a href="https://docs.google.com/document/d/1eXK_6D_ECOgxvJSNGqqJQXjL-3mNMZg34ttUP_Pwzko/edit?usp=sharing">https://docs.google.com/document/d/1eXK_6D_ECOgxvJSNGqqJQXjL-3mNMZg34ttUP_Pwzko/edit?usp=sharing</a></p>
+</li>
+</ol>
+<p><strong><em>next steps</em></strong></p>
+<p>Brug MKDocs guide til at theme og udbygge din portfolio side <a href="https://www.mkdocs.org/user-guide/">https://www.mkdocs.org/user-guide/</a></p>
+<h2 id="velse-3-gitlab-pages-til-it-sikkerheds-nyhedskilder">Øvelse 3 - gitlab pages til it-sikkerheds nyhedskilder</h2>
+<h3 id="information_2">Information</h3>
+<p>I denne øvelse skal i samarbejde om at lave en offentlig gitlab pages side til at liste de forskellige it-sikkerheds nyheds kilder i fandt i sidste uge.<br />
+Igennem semestret skal i løbende opdatere siden med nye kilder i finder.<br />
+Det vil også være kool hvis i kan lave kategorier så siden, udover nyhedskilder, har kategorier for it-sikkerheds tools og it-sikkerheds læringskilder.</p>
+<p>Ideen er at i starter en tradition som kommende it-sikkerheds studerende kan bygge videre på.</p>
+<p>Siden skal laves med MKDocs, som i øvelse 3.</p>
+<p>Øvelsen giver jer også mulighed for at øve git branching, git merge og løsning af git merge conflicts.
+Derfor er det ikke tilladt at pushe direkte til <code>main</code> branchen, alle kode integrationer skal lave med en <code>merge request</code> og alle conflicts skal <code>resolves</code> i branchen før ændringer merges.</p>
+<p>I kan bruge gitlab docs som reference når i bruger git <a href="https://docs.gitlab.com/ee/topics/git/">https://docs.gitlab.com/ee/topics/git/</a><br />
+gitlab har også lavet et git cheatsheet som kan være nyttigt <a href="https://about.gitlab.com/images/press/git-cheat-sheet.pdf">https://about.gitlab.com/images/press/git-cheat-sheet.pdf</a></p>
+<p>Mens i laver øvelsen så brug projektoren i klassen, så alle kan følge med og byde ind mens i laver øvelsen.</p>
+<h3 id="instruktioner_2">Instruktioner</h3>
+<p><strong>Del 1</strong></p>
+<ol>
+<li>Beslut på klassen hvordan siden skal struktureres, hvilke informationer, underpunkter osv. skal der laves. Dokumentér strukturen i et <code>.md</code> dokument.</li>
+<li>Hvilke informationer skal der være til hver nyheds kilde ?<br />
+   Jeg foreslår en kort beskrivelse af kildens indhold, hvem der står bag kilden og selvfølgelig et link til kilden.</li>
+<li>Lav et offentligt gitlab projekt, det skal navngives <strong>ucl-itsec-student-ressources</strong>.</li>
+<li>Installer MKDocs som i øvelse 2, kontroller at gitlab pages køres.</li>
+<li>Tilføj alle i klassen som <code>maintainer</code> og mig som <code>owner</code>, mit gitlab bruger navn er <strong>npes</strong></li>
+<li>Hver studerende <em>kloner</em> projektet til egen computer</li>
+<li>Hver studerende laver en branch i projektet og tilføjer 1 nyhedskilde.</li>
+<li>Hver studerende laver en merge request og sætter en anden studerende til at reviewe og approve merge requesten, sørg for ikke at slette branchen når den merges til main.</li>
+<li>Når alle har tilføjet en nyhedskilde via merge request er øvelsen gennemført.</li>
+</ol>
+<p><strong>Hvis i laver git fejl, så se det som en god mulighed for at lære hvordan i kan rette fejlen.</strong><br />
+<strong>Brug <a href="https://ohshitgit.com/">https://ohshitgit.com/</a> som reference og snak med hinanden om hvordan fejjlen bedst kan løses</strong></p>
+<h2 id="velse-4-refleksions-sprgsmal">Øvelse 4 - refleksions spørgsmål</h2>
+<h3 id="information_3">Information</h3>
+<p>Refleksions spørgsmål som du skal besvare i dine private noter.<br />
+De kan bruges som forberedelse til fagets eksamen, men også som en hjælp til at reflektere over din viden.</p>
+<h3 id="instruktioner_3">Instruktioner</h3>
+<p>Svar individuelt på følgende spørgsmål:</p>
+<ol>
+<li>Hvorfor er det ikke sikkert at gemme sine private nøgler på andre computere? Hvad risikerer du ved det?</li>
+<li>Er det sikkert at forwarde din private ssh nøgle med en user agent ? Uddyb dit svar.</li>
+<li>Hvad kan du gøre for at sikre din gitlab konto yderligere ?</li>
+<li>Er det bedre at arbejde i branches fremfor direkte på main branch ?</li>
+<li>Hvad er fordelene ved at bruge git ?</li>
+<li>Er det en fordel at arbejde med git fra CLI fremfor GUI ?</li>
+<li>Hvor brugbare, for kommende studerende, er informationerne på nyheds siden og hvordan kan den forbedres ?</li>
+<li>Hvad er yaml og hvor bruges det ?</li>
+<li>Hvem har lavet git ?</li>
+<li>Hvilke alternativer til gitlab findes der (research)</li>
+<li>Hvordan kan en git merge conflict opstå og hvad kan du gøre for at løse den ?</li>
+<li>Hvad er pip ?</li>
+<li>Forklar fordelene ved at bruge et virtual environment i python</li>
+<li>Skriv et kort resume af hvad du har lært i denne uges øvelser.</li>
+<li>Hvilke it-sikkerheds nyheder gjorde størst indtryk på dig i denne uge ?</li>
+</ol>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../../../osint_tools/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Vores medlemmer" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Vores medlemmer
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../../cheat_sheets/git_cheat_sheet/" class="md-footer__link md-footer__link--next" aria-label="Next: Git Cheat sheet" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Git Cheat sheet
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs"], "search": "../../../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.f758a944.min.js"></script>
+      
+    
+  </body>
+</html>
