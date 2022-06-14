@@ -3,12 +3,12 @@ site_url: https://kasperhk.github.io/fdca-web
 
 #structure
 nav:
-        - Home: index.md
-        - News: news.md
-        - OSINT Tools: osint_tools.md
+        - Hjem: index.md
+        - Om FDCA: news.md
+        - Vores medlemmer: osint_tools.md
         - 'Cheat sheets':
           - 'Git Cheat sheet': 'cheat_sheets/git_cheat_sheet.md'
-        - Exercises:
+        - Cyberværnepligten:
           - 'Network Security':
             - 'Week 07': 'exercises/network_security/exercises_ww07.md'
 
@@ -37,5 +37,5 @@ theme:
     code: Roboto Mono
   favicon: assets/images/favicon.png
   icon:
-    logo: assets/images/fdca
+    logo: /assets/images/fdca
 
