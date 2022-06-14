@@ -11,8 +11,6 @@ nav:
         - Cyberværnepligten:
           - 'Network Security':
             - 'Week 07': 'exercises/network_security/exercises_ww07.md'
-
-
 #theme
 theme: 
   name: material
@@ -38,5 +36,5 @@ theme:
     code: Roboto Mono
   favicon: assets/images/favicon.png
   icon:
-    logo: /assets/images/fdca
+    logo: assets/images/fdca
 
