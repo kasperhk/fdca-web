@@ -1,0 +1,41 @@
+site_name: KasperHjorts
+site_url: https://kasperhk.gitlab.io/hjortens/
+
+#structure
+nav:
+        - Home: index.md
+        - News: news.md
+        - OSINT Tools: osint_tools.md
+        - 'Cheat sheets':
+          - 'Git Cheat sheet': 'cheat_sheets/git_cheat_sheet.md'
+        - Exercises:
+          - 'Network Security':
+            - 'Week 07': 'exercises/network_security/exercises_ww07.md'
+
+#theme
+theme: 
+  name: material
+
+  features:
+    - navigation.tabs
+
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: deep purple
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue grey
+      accent: red
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/images/favicon.png
+  icon:
+    logo: logo
+
