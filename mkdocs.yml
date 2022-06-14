@@ -1,6 +1,13 @@
 site_name: FDCA
 site_url: https://kasperhk.github.io/fdca-web
 
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
 #structure
 nav:
         - Hjem: index.md
@@ -38,10 +45,4 @@ theme:
   icon:
     logo: fdca
 
-markdown_extensions:
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-      options:
-        custom_icons:
-          - overrides/.icons
+
